@@ -51,7 +51,9 @@ def main():
     full_name = input("Enter your full name: ")
     question = input("Do you live in an apartment? (y/n): ")
     if question == "y" or question == "yes":
-        apartment_number_string = input("Enter your appartment number: ")
+        apartment_number_string = input("Enter your apartment number: ")
+    elif question != "n" or question != "no":
+        print("Invalid answer!")
     street_number_string = input("Enter your street number: ")
     street_name = input("Enter your street name AND type (Main St, Express Pkwy...): ")
     city = input("Enter your city: ")
