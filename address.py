@@ -30,11 +30,11 @@ def Mail_Address(
             name.upper()
             + "\n"
             + "{}".format(street_number)
-            + ""
+            + " "
             + street.upper()
             + "\n"
             + city.upper()
-            + ""
+            + " "
             + province.upper()
             + "  "
             + postal_code.upper()
