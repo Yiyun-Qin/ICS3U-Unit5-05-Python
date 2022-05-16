@@ -13,9 +13,23 @@ def Mail_Address(
         mail = (
             name.upper()
             + "\n"
-            + apartment_number
+            + "{}".format(apartment_number)
             + "-"
-            + street_number
+            + "{}".format(street_number)
+            + " "
+            + street.upper()
+            + "\n"
+            + city.upper()
+            + " "
+            + province.upper()
+            + "  "
+            + postal_code.upper()
+        )
+    else:
+        mail = (
+            name.upper()
+            + "\n"
+            + "{}".format(street_number)
             + ""
             + street.upper()
             + "\n"
@@ -25,19 +39,6 @@ def Mail_Address(
             + "  "
             + postal_code.upper()
         )
-    mail = (
-        name.upper()
-        + "\n"
-        + street_number
-        + ""
-        + street.upper()
-        + "\n"
-        + city.upper()
-        + ""
-        + province.upper()
-        + "  "
-        + postal_code.upper()
-    )
     return mail
 
 
