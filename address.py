@@ -9,7 +9,7 @@ def Mail_Address(
     name, street_number, street, city, province, postal_code, apartment_number=None
 ):
     # This function returns the string in mail format
-    
+
     # process
     if apartment_number != None:
         mail = (
