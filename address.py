@@ -5,7 +5,7 @@
 # This is the math program, formatting the address
 
 
-def Mail_Address(
+def MailAddress(
     name, street_number, street, city, province, postal_code, apartment_number=None
 ):
     # This function returns the string in mail format
@@ -69,7 +69,7 @@ def main():
         # call functions
         if apartment_number_string != None:
             appartment_number = int(apartment_number_string)
-            mail = Mail_Address(
+            mail = MailAddress(
                 name=full_name,
                 apartment_number=appartment_number,
                 street_number=street_number,
@@ -79,7 +79,7 @@ def main():
                 postal_code=postal_code,
             )
         else:
-            mail = Mail_Address(
+            mail = MailAddress(
                 name=full_name,
                 street_number=street_number,
                 street=street_name,
